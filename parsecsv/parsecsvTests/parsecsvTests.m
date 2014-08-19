@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "parsecsv.h"
 
 @interface parsecsvTests : XCTestCase
 
@@ -26,9 +27,8 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testParseCSV {
+    NSArray * array = [ParseCSV parseCsvIntoArrayFromFilePath:nil];
 }
 
 @end

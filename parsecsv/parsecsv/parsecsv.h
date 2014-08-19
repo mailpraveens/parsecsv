@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface parsecsv : NSObject
-- (NSArray *) parseCsvIntoArrayFromFilePath:(NSString *) fullFilePath;
+@interface ParseCSV : NSObject
++ (NSArray *) parseCsvIntoArrayFromFilePath:(NSString *) fullFilePath;
 @end

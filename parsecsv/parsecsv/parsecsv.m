@@ -8,10 +8,10 @@
 
 #import "parsecsv.h"
 
-@implementation parsecsv
+@implementation ParseCSV
 
 
-- (NSArray *) parseCsvIntoArrayFromFilePath:(NSString *) fullFilePath {
++ (NSArray *) parseCsvIntoArrayFromFilePath:(NSString *) fullFilePath {
     NSMutableArray * returnArray = [NSMutableArray  array];
     NSError * error;
     NSString* fileContents = [NSString stringWithContentsOfFile:fullFilePath encoding:NSUTF8StringEncoding error:&error];
